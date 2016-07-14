@@ -1,6 +1,6 @@
 Name: julia
 Cartridge-Short-Name: julia
-Cartridge-Version: '0.0.2'
+Cartridge-Version: '0.0.3'
 Display-Name: "Julia Cartridge"
 Description: "julia cartridge"
 Source-Url: https://github.com/codeneomatrix/julia-cartridge.git

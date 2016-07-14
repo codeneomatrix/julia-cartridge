@@ -6,7 +6,7 @@ port = parse(Int,ENV["OPENSHIFT_JULIA_PORT"])
 
 
   server = Merly.app(ur,"jl")
-  @page "/" File("welcome.html", res)
+  @page "/" File("welcome.html", r)
   server.notfound("
     <!DOCTYPE html>
     <html>
