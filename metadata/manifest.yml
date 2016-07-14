@@ -5,7 +5,7 @@ Display-Name: "Julia Cartridge"
 Description: "julia cartridge"
 Source-Url: https://github.com/codeneomatrix/julia-cartridge.git
 Cartridge-Vendor: ivandavid_codeneomatrix
-Version: '0.4.3'
+Version: '0.4.6'
 Categories:  
   - service
   - web_framework
