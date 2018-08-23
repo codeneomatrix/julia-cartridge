@@ -1,12 +1,12 @@
 using Merly
 
-ur= ENV["OPENSHIFT_REPO_DIR"] 
+ur= ENV["OPENSHIFT_REPO_DIR"]
 host = getaddrinfo(ENV["OPENSHIFT_JULIA_IP"])
 port = parse(Int,ENV["OPENSHIFT_JULIA_PORT"])
 
 
   server = Merly.app(ur,"jl")
-  @page "/" File("welcome.html", r)
+  @page "/" File("welcome.html")
   server.notfound("
     <!DOCTYPE html>
     <html>

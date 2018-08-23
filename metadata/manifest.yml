@@ -5,26 +5,26 @@ Display-Name: "Julia Cartridge"
 Description: "julia cartridge"
 Source-Url: https://github.com/codeneomatrix/julia-cartridge.git
 Cartridge-Vendor: ivandavid_codeneomatrix
-Version: '0.4.6'
-Categories:  
+Version: '0.5.0'
+Categories:
   - service
   - web_framework
 Provides:
   - julia
-  - julia-v0.4.6
+  - julia-v1.0.0
 Endpoints:
   - Private-IP-Name: IP
     Private-Port-Name: PORT
     Private-Port: 8080
     Public-Port-Name: PROXY_PORT
     Protocols: [http, ws]
-    Options: 
-      primary: true 
+    Options:
+      primary: true
     Mappings:
       - Frontend: ""
         Backend: ""
         Options:
-          websocket: true  
+          websocket: true
 Scaling:
   Min: 1
   Max: -1
