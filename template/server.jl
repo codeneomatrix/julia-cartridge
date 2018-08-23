@@ -15,4 +15,4 @@ port = parse(Int,ENV["OPENSHIFT_JULIA_PORT"])
     </html>
   ")
 
-  server.start("$host", port)
+  server.start(Dict("host" => "$host","port" =>port))
