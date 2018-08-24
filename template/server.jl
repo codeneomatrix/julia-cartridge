@@ -5,7 +5,11 @@ host = getaddrinfo(ENV["OPENSHIFT_JULIA_IP"])
 port = parse(Int,ENV["OPENSHIFT_JULIA_PORT"])
 
 
-  server = Merly.app(ur,"jl")
+  server = Merly.app()
+
+  server.webserverpath(ur)
+  server.webserverfiles("jl")
+
   @page "/" File("welcome.html")
   server.notfound("
     <!DOCTYPE html>
