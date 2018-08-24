@@ -10,7 +10,11 @@ port = parse(Int,ENV["OPENSHIFT_JULIA_PORT"])
   server.webserverpath(ur)
   server.webserverfiles("jl")
 
-  @page "/" File("welcome.html")
+  @page "/" begin
+    res.headers["Content-Type"]= "text/html"
+    File("welcome.html")
+  end
+
   server.notfound("
     <!DOCTYPE html>
     <html>
